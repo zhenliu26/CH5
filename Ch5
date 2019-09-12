@@ -1,0 +1,60 @@
+'''
+# boolean
+
+def TOF(bool):
+    if(bool):
+        print("true")
+    else:
+        print("false")
+TOF(6%3==0)
+TOF(7%3==0)
+
+#conditional
+#This is an if statement
+water_per_person=20 #in liters, daily
+if water_per_person > 19:
+    print water_per_person,(": post emergency levels")
+water_per_person=13
+if water_per_person<15:
+    print water_per_person,(": emergency levels")
+
+x=-5
+if x<0:
+    pass
+'''
+#function to determine whether the input number is even
+def deteven(x):
+    if x%2==0:
+        print x,("is even.")
+    else:
+        print x,("is odd.")
+
+
+def ifequal(x,y):
+    if x>y:
+        print x,("is greater than"),y
+    elif x<y:
+        print x,("is less than"),y
+    else:
+        print x,("is equal to"),y
+
+#Recursion
+def countdown(n):
+    if n==0: # base case
+        print("Blastoff")
+    else:
+        print(n)
+        countdown(n-1)
+
+#Return
+def cube(x):
+    return x*x*x
+print(cube(3))
+
+def sumInt(num):
+    if num==0:
+        return 0
+    else:
+        sum=num+sumInt(num-1)
+    return sum
+print(sumInt(4))
